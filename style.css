@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    background-color: #131921;
+    padding: 5px;
+}
+header div{
+    /* flex-grow: 1; */
+}
+.logo{
+    width: 150px;
+    background-image: url("/asset/download.png");
+    background-repeat: no-repeat;
+    background-position: 10px -34px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo span{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 13px;
+}
+.location{
+    height: 50px;
+}
+.location a{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    gap: 5px;
+}
+.location-icon{
+    align-self: center;
+}
+.location-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;   
+}
+.location-text-1{
+    color: rgb(196, 196, 196);
+}   
+.location-text-2{
+    font-weight: bolder;
+}
+
+/* --------------------------- */
+
+nav{
+    background-color: #232F3E;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 5px 5px 6.5px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 5px;
+}
+nav ul li{
+    flex-grow: 1;
+    font-size: 14px;
+}
+nav ul li:hover{
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
