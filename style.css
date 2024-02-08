@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: rgb(216, 215, 215);
+}
 header{
     display: flex;
     background-color: #131921;
@@ -74,4 +77,107 @@ nav ul li{
 nav ul li:hover{
     outline: 1px solid white;
     outline-offset: 5px;
+}
+
+/* --------- */
+
+article{
+    box-sizing: border-box;
+    background-color: ;
+    width: 100%;
+    height: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+article div{
+    background-color: white;
+}
+.box1,.box2,.box3,.box4{
+    grid-row: 1/3;
+}
+.box6,.box7,.box8,.box9{
+    grid-row: 3/5;
+}
+.box4{
+    background-color: transparent;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box4 div{
+    background-color: white;
+}
+.in42{
+    grid-row: 2/4;  
+}
+.box6{
+    padding: 20px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+section div{
+    width: calc(50% - 5px);
+}
+section div img{
+    width: 100%;
+}
+section div p{
+    font-size: 14px;
+}
+.box6 h4{
+    font-size: 20px;
+}
+/* ----------- */
+main.women{
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+}
+main.women h4{
+    font-size: 24px;
+    display: inline-block;
+}
+main.women a{
+    color: blue;
+    font-size: 14px;
+    margin-left: 20px;
+}
+main.women a:hover{
+    text-decoration: underline;
+}
+main.women div{
+    display: flex;
+}
+main.women div section{
+    flex-grow: 1;
+}
+/*  */
+
+.Shop>div{
+    padding: 20px;
+}
+.Shop h4{
+    padding-bottom: 10px;   
+}
+.Shop div section div.shop-link{
+    flex-grow: 1;
+}
+.Shop div section div.shop-link a{
+    color: blue;
+    font-size: 14px;
+}
+.Shop div section{
+    /* gap: 10px 20px;  */
+    height: 473px;
+    row-gap: 20px;
+}
+.Shop div.shop1 section div img{
+    height: 180px;
 }

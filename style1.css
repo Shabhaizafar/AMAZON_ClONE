@@ -1,108 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    background-color: rgb(228, 227, 227);
+    background-color: gray !important;
 }
-article{
-    box-sizing: border-box;
-    
-    width: 100%;
-    height: 850px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
-    transform: translateY(-300px);
-}
-article div{
-    background-color: red;
-}
-.box1,.box2,.box3,.box4{
-    grid-row: 1/3;
-}
-.box6,.box7,.box8,.box9{
-    grid-row: 3/5;
-}
-.box4{
-    background-color: transparent;
-    display: grid;
-    gap: 30px;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-.box4 div{
+main.slider-4{
     background-color: white;
-}
-.in42{
-    grid-row: 2/4;  
-}
-.box6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
+    margin: 30px;
 }
-section{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-section div{
-    width: calc(50% - 5px);
-}
-section div img{
-    width: 100%;
-}
-section div p{
-    font-size: 14px;
-}
-.box6 h4{
-    font-size: 20px;
-}
-/* ------ */
-div.blockbuster{
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-}
-div.blockbuster h4{
+main.slider-4 h4{
+    font-size: 18px;
     display: inline-block;
 }
-div.blockbuster a{
+main.slider-4 a{
     text-decoration: none;
-    font-size: 14px;
     margin-left: 10px;
 }
-div.blockbuster a:hover{
-    color: orangered;
+main.slider-4 a:hover{
     text-decoration: underline;
 }
-
-div.blockbuster main{
+main.slider-4 section{
+    margin-top: 20px;
     display: flex;
-    gap: 10px;
+    overflow: auto;
 }
-div.blockbuster main div{
-    flex-grow: 1;
+main.signer{
+    background-color: white;
+    padding: 20px 0px;
 }
-div.blockbuster main div section{
+main.signer form{
+    border: 1px solid rgba(145, 144, 144, 0.973);
+    margin: 1%;
+    border-radius: 5px;
+    padding: 40px;
+}
+main.signer form div{
+    width: fit-content;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+main.signer form div button{
+    width: 100%;
+    border: 1px solid goldenrod;
+    background-image: linear-gradient(to top,goldenrod,gold);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 3px;
+    margin: 5px 0px;
+}
+main.signer form div span{
+    font-size: 10px;
+}
+main.signer form div span a{
+    text-decoration: none;
+}
+main.signer form div span a:hover{
+    color: goldenrod;   
+}
+
+/* ----------- */
+em{
     display: block;
-    background-color: rgb(220, 219, 219);
+}
+em a{
+    display: block;
+    background-color: #37475A;
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.crimson{
-    background-color: crimson;
+    text-decoration: none;
     color: white;
-    font-size: 12px;    
-    display: inline-block;
-    padding: 5px;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+em a:hover{
+    color: white;
+}
+
+footer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+}
+footer h4{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+footer ul{
+    list-style-type: none;
+    margin-left: -30px;
+}
+footer ul li{
+    line-height: 30px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+footer ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* ------------- */
+main.main1{
+    background-color: #232F3E;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+main.main1 div.bg{
+    width: 150px;
+    height: 40px;
+    background-image:  url("/asset/Amazon-India-Logo.png");
+    background-position: 0px 80px;
+    background-size: 123% 100%;
+}
+main.main2{
+    background-color: #232F3E;
+    padding: 20px;
+}
+main.main2 ul{
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main.main2 ul li a{
+    font-size: 12px;  
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+div.line{
+    border-top: 1px solid white;
+}
+input[type="number"]{
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 7px 7px 7px 20px;
+    border-radius: 3px;
+
+}
+::placeholder{
+    color: white;
+}
+div.lang:hover ul{
+    display: block;
+}
+div.lang{
+    background-color: transparent;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    margin-left: 30px;
+}
+div.lang ul{
+    display: none;
+    width: 200px;
+    background-color: white;
+    list-style-type: none;
+    padding: 20px;
+    position: absolute;
+    text-align: left;
+    border:5px;
+    top: 35px ;
+    left: 0px;
     border-radius: 4px;
 }
-.crimson2{
-    color: crimson;
-    font-size: 10px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+div.lang ul li a{
+    color: rgb(43, 43, 43);
+    text-decoration: none;
 }
-div.blockbuster main div p{
+div.lang ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.up_arrow{
+    color: white;
+    position: absolute;
+    top: 18px;
+    left: 70px;
+    font-size: 30px;
+    display: none;
+}
+div.lang:hover span{
+    display: inline;
+}
+/* ------ */
+main.main3{
+    background-color: #131A22;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px 50px 20px 50px;
+}
+main.main3 div{
+    flex-basis: 200px;
+    line-height: 13px;
+}
+main.main3 div a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(195, 180, 180);
     font-size: 14px;
+}
+main.main3 div a span{
+    color: white;
+}
+main.main3 div a:hover{
+    text-decoration:underline;
+}
+/* ----- */
+main.main4{
+    background-color: #131A22;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding-bottom: 30px;
+
+}
+main.main4 a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main.main4 a:hover{
+    text-decoration: underline;
+}
+:checked{
+    fill: aqua;
+    color: aqua;
+}
+.language{
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    top: 35%;
+    left: 5px;
 }
